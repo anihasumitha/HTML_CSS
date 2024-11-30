@@ -1,0 +1,171 @@
+.introduction{
+    height: 200px;
+    width: auto;
+    background-color:rgb(42, 76, 246);
+
+
+}
+
+.portfolio{
+
+
+    color: black;
+    text-align: center;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    padding-top:40px;
+    font-size: 33px;
+    font-family: 'Roboto';
+
+
+}
+
+.info{
+    font-size: x-large;
+    color: white;
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content:center;
+
+
+}
+.about, .contact{
+
+padding: 40px 25px;
+
+}
+
+
+
+
+#personal-info{
+    height: 300px;
+    width: auto;
+    background-color: rgb(227, 226, 226);
+}
+
+.about-me{
+
+    color: black;
+    text-align: center;
+    height: auto;
+    width: auto;
+    justify-content: center;
+
+    padding-top:40px ;
+    font-size: 25px;
+    font-family: 'Roboto';
+
+}
+
+.description{
+    text-align:center;
+    color: black;
+}
+
+.image{
+
+    height: 150px;
+    width:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+
+    border-radius: 100%;
+    height: 150px;
+    width:150px;
+    /* justify-items: center; */
+    object-fit: cover;
+}
+
+
+
+
+#contact-information{
+    background-color: white;
+    height: 500px;
+    width: auto;
+    text-align: center;
+
+}
+
+.contact-me{
+    display: flex;
+    justify-content: center;
+    padding-top:40px ;
+    font-size: 25px;
+    font-family: 'Roboto';
+
+}
+
+.details{
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.details input, textarea, button{
+
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+    
+
+
+
+
+.details label{
+    padding-bottom: 20px;
+    margin: 10px 0 5px;
+
+}
+
+/* .details name{
+    border-radius: 40%;
+} */
+
+
+
+
+
+
+
+
+
+.submit {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 350px;
+}
+
+.submit:hover {
+    background-color:  blue
+
+}
+
+
+
+.copyright{
+    background-color:  #333;
+    height: 50px;
+    width: auto;
+    color: lightgray;
+    text-align: center;
+    padding-top: 10px;
+}
