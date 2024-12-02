@@ -1,0 +1,127 @@
+
+body{
+    margin: 0;
+}
+
+.intro{
+    background: url("https://images.unsplash.com/photo-1515674744565-0d7112cd179a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fHw%3D") no-repeat center center / cover;
+    /* height: 400px;
+    width: auto; */
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+
+
+.intro h1{
+    color: black;
+    font-size: 35px;
+    font-family: Arial;
+    text-align: center;
+}
+.intro p{
+    color: gray;
+    font-size: 20px;
+    font-family: Arial;
+    text-align: center;
+
+}
+button{
+    
+    height: 50px;
+    width: 100px;
+    padding: 16px 16px;
+    background-color: rgb(24, 97, 232);
+    border: 0;
+    justify-content: center;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: blue;
+}
+
+button a{
+    height: auto;
+    width:auto;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#features{
+    padding-top: 5px;
+    margin: 0px;
+    /* border: 2px solid red; */
+    height: auto;
+    width: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    justify-content: center;
+    padding: 0 auto;
+}
+
+.feature1{
+
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    height: auto;
+    width:auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+}
+
+.box{
+    padding: 1rem 1rem;
+    margin: 20px 20px;
+    background-color: white;
+    border: 2px solid #ddd;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer{
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: gray;
+    color: black;
+    margin: 0;
+    height:150px ;
+}
+
+
+li{
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) and (max-width: 921px) {
+
+    .feature1{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width:913px) and (max-width:1382px) {
+
+    .feature1{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+/* a:link { color: blue }
+    a:visited { color: red }
+    a:hover { color: green }
+    a:active { color: black }
+    #special:link { color: pink } */
+
+
