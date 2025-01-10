@@ -1,0 +1,663 @@
+body{
+    font-family: "Kanit", serif;
+}
+strong{
+    font-family: Garamond, serif;
+    font-size: 45px;
+    color:#01a9cb;
+}
+    
+header{
+background-color: aliceblue;
+display:flex;
+justify-content: space-around;
+align-items: center;
+height: auto;
+width: auto;
+position: sticky;
+top:0;
+text-decoration: none;
+font-family: 'Courier New', monospace;
+
+}
+header a{
+    text-decoration: none;
+    color:Black;
+}
+
+.logo{
+    display: inline-flex;
+    align-items: center;
+    font-size: 35px;
+}
+.navigation{
+    background-color: red;
+}
+.navigation ul{
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    gap:20px;
+    font-size: 20px;
+    padding:5px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.two, .four{
+ 
+  position: relative;
+    display: inline-block;
+
+}
+
+.dropdown2, .dropdown4{
+
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content2, .dropdown-content4{
+    background-color: #f6f2f5;
+    color: black;
+    position: absolute;
+    display: none;
+    height: auto;
+    text-align: center;
+    width: 120px;
+}
+
+.dropdown-content2 a,.dropdown-content4 a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown2:hover .dropdown-content2, .dropdown4:hover .dropdown-content4{
+    display: block;
+}
+
+.membership ul{
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none;
+    gap:20px;
+    font-size: 20px;
+    padding:5px 0;
+}
+
+.intro{
+    background-color: white;
+    height:700px;
+    width:100%;
+}
+.picture{
+    height: 400px;
+    width: auto;
+    display:flex ;
+    justify-content: center;
+    padding:30px 1rem;
+}
+.picture img{
+    object-fit: cover;
+    border-radius: 5%;
+    height:400px;
+    width: 800px;
+    border: 3px solid white;
+    margin: 1rem;
+}
+.profile{
+color: black;
+text-align: center;
+padding: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid black;
+}
+
+.profile h1{
+    font-size: 35px;
+}
+.profile p{
+    font-size: 20px;
+}
+
+.details{
+    padding: 20px 150px;
+    background-color: white;
+    height: auto;
+    width:auto; 
+}
+
+.about-me{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
+.about-me h1{
+    color:#01a9cb;
+    font-size: 35px;
+    text-align: center;
+}
+.about-me p{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.skills{
+    padding:30px 0;
+}
+.skills h1{
+    color:#01a9cb;
+    font-size: 35px;
+    text-align: center;
+    
+}
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    padding: 1rem;
+    justify-content: center;
+}
+.boxes{
+    height:auto;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.boxes:hover {
+    box-shadow: 12px 12px 12px rgba(9, 9, 9, 0.2),-12px -12px 12px rgba(9, 9, 9, 0.2); 
+  }
+
+
+
+.features{
+width: auto;
+height: auto;
+padding-bottom: 30px;
+}
+
+.features h1{
+    color:#01a9cb;
+    padding: 30px 0;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    
+}
+.all-features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding-bottom:40px;
+    justify-items: center;
+    border-bottom: 2px solid black;
+}
+.pro{
+    height:auto;
+    width:275px;
+    padding: 1rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6f1f3;
+}
+.pro:hover {
+    box-shadow: 12px 12px 12px rgba(9, 9, 9, 0.2),-12px -12px 12px rgba(9, 9, 9, 0.2); 
+  }
+
+.pic1 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pic1{
+    justify-items: center;
+    align-items: center;
+
+}
+.caption1{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+.pic2 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caption2{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+.pic3 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caption3{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+
+.student-membership{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: auto;
+    padding: 6rem 2rem;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+}
+.stu-mem-pic{
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.stu-mem-pic img{
+    height: 400px;
+    width: 100%;
+}
+.student-membership button{
+    all:unset
+}
+
+
+
+
+
+
+.testimonials{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem 4rem;
+font-size: 25px;
+}
+
+.testimonials button{
+    all: unset;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.logincontainer{
+    height: 900px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 0;
+    color: #01a9cb;
+    padding: 20px;
+    background: white;
+
+}
+
+.logincontainer strong{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #01a9cb;
+}
+
+.logincontainer input
+{
+font-size: 25px;
+color: black;
+height:60px;
+width:350px;
+padding: 2px 10px;
+}
+
+.logincontainer button{
+all: unset;
+background-color: #01a9cb;
+height: 60px;
+width: 350px;
+padding: 2px 10px;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+.logincontainer button:hover{
+    background-color: #08313a;
+}
+
+.login:hover
+{
+    display: block;
+}
+
+
+.signupcontainer{
+    height: 900px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 0;
+    color: #01a9cb;
+    padding: 20px;
+    background: white;
+}
+
+.signupcontainer strong{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #01a9cb;
+}
+
+.signupcontainer input
+{
+font-size: 25px;
+color: black;
+height:60px;
+width:350px;
+padding: 2px 10px;
+}
+
+.signupcontainer button{
+all: unset;
+background-color: #01a9cb;
+color: white;
+height: 60px;
+width: 350px;
+padding: 2px 10px;
+font-size: 25px;
+text-align: center;
+}
+.signupcontainer button:hover{
+    background-color: #08313a;
+}
+
+.sign-up:hover{
+    display: block;
+}
+
+
+
+
+
+.amenitiescontainer{
+    padding: 10px 20px;
+    height: 2000px;
+    width: auto;
+    background-color: white;
+    color: rgb(56, 44, 44);
+
+}
+.studios{
+    text-align: left;
+    font-size: 45px;
+    color: #01a9cb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-bottom: 2px solid black;
+}
+
+.studiocontent{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 25px;
+    gap:20px;
+    padding: 10px 10px;
+}
+.studiocontents{
+    display: flex;
+    gap:20px;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.studiocontent1{
+    gap:20px;
+    padding: 5px 10px;
+}
+.studiocontent2{
+    gap:20px;
+    padding: 5px 10px;
+}
+.studioimages{
+    height: 300px;
+    width: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.studioimages1 img{
+    height: 300px;
+    width: 400px;
+
+}
+.studioimages2 img{
+    height: 300px;
+    width: 400px;
+
+}
+
+
+
+
+.womensonly{
+    text-align: left;
+    font-size: 45px;
+    color: #01a9cb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-bottom: 2px solid black;
+}
+
+.womensonlycontent{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 25px;
+    gap:20px;
+    padding: 10px 10px;
+}
+.womensonlycontents{
+    display: flex;
+    gap:20px;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.womensonlycontent1{
+    gap:20px;
+    padding: 5px 10px;
+}
+.womensonlycontent2{
+    gap:20px;
+    padding: 5px 10px;
+}
+.womensonlyimages{
+    height: 300px;
+    width: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.womensonlyimages1 img{
+    height: 300px;
+    width: 400px;
+
+}
+.womensonlyimages2 img{
+    height: 300px;
+    width: 400px;
+
+}
+
+
+.amenetiesconclusion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-bottom: 2px solid black;
+}
+
+.amenetiesconclusion strong{
+    text-align: left;
+    font-size: 45px;
+    color: #01a9cb;
+    padding: 3px 20px;
+
+}
+.amenetiesconclusion p{
+text-align: center;
+font-size: 25px;
+color: black;
+
+}
+
+
+.contact{
+    height: 600px;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contactheading{
+    text-align: center;
+    font-size: 45px;
+    color: #01a9cb;
+    padding: 5px 20px;
+}
+.contactcontent{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    padding: 3px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:611px) and (max-width:1382px){
+
+    .about-me{
+        display: contents;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me h1{
+        color: rgb(23, 64, 129);
+        font-size: 35px;
+        text-align: center;
+    }
+    .about-me p{
+        font-size: 20px;
+        text-align: left;
+    }
+
+.skills{
+    padding:10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 1rem;
+    
+}
+
+.all-features{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+
+}
