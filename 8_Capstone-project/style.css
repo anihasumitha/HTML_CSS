@@ -13,7 +13,7 @@ display:flex;
 justify-content: space-around;
 align-items: center;
 height: auto;
-width: auto;
+width: 1382px;
 position: sticky;
 top:0;
 text-decoration: none;
@@ -30,9 +30,7 @@ header a{
     align-items: center;
     font-size: 35px;
 }
-.navigation{
-    background-color: red;
-}
+
 .navigation ul{
     list-style: none;
     text-decoration: none;
@@ -603,61 +601,1308 @@ color: black;
 
 
 
+@media screen and (min-width:320px) and (max-width:768px){
 
+    body{
+        font-family: "Kanit", serif;
+        height: auto;
+        width:768px;
+        padding: 0;
+        margin: 0;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:611px) and (max-width:1382px){
-
-    .about-me{
-        display: contents;
-        justify-content: center;
+    header{
+        background-color: aliceblue;
+        display:flex;
+        justify-content: space-around;
         align-items: center;
-    }
+        height: auto;
+        width: 768px;
+        position: sticky;
+        top:0;
+        text-decoration: none;
+        font-family: 'Courier New', monospace;
+        border: 2px solid green;
+        }
 
-    .about-me h1{
-        color: rgb(23, 64, 129);
-        font-size: 35px;
+    header a{
+        text-decoration: none;
+        color:Black;
+    }
+    
+    .logo{
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        width:8%;
+    }
+    
+    .navigation ul{
+        list-style: none;
+        text-decoration: none;
+        display: inline-flex;
+        gap:5px;
+        font-size: 8px;
+        padding:5px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .two, .four{
+     
+      position: relative;
+        display: inline-block;
+    
+    }
+    
+    .dropdown2, .dropdown4{
+    
+        color: black;
+        padding: 5px;
+        font-size: 8px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .dropdown-content2, .dropdown-content4{
+        background-color: #f6f2f5;
+        color: black;
+        position: absolute;
+        display: none;
+        height: auto;
         text-align: center;
+        width: 60px;
     }
-    .about-me p{
-        font-size: 20px;
-        text-align: left;
+    
+    .dropdown-content2 a,.dropdown-content4 a{
+      color: black;
+      padding: 6px 8px;
+      text-decoration: none;
+      display: block;
     }
+    
+    .dropdown2:hover .dropdown-content2, .dropdown4:hover .dropdown-content4{
+        display: block;
+    }
+    
+    .membership ul{
+        display: inline-flex;
+        list-style: none;
+        text-decoration: none;
+        gap:5px;
+        font-size: 8px;
+        padding:0;
+        width: 100%;
+    }
+    
 
-.skills{
-    padding:10px 0;
+
+.intro{
+    background-color: white;
+    height:450px;
+    width:768px;
+    display: flex;
+    flex-direction: column;
+}
+.picture{
+    height: 300px;
+    display:flex ;
     justify-content: center;
-    align-items: center;
+    padding:0;
+}
+.picture img{
+    object-fit: cover;
+    border-radius: 5%;
+    height:250px;
+    width: 200px;
+    border: 3px solid white;
+    margin: 1rem;
+}
+.profile{
+color: black;
+text-align: center;
+padding: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid black;
+
+}
+.profile h1{
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-.container{
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    padding: 1rem;
-    
+.profile strong{
+    font-size: 25px;
+}
+.profile p{
+    font-size: 12px;
+}
+
+
+.details{
+    padding: 20px;
+    background-color: white;
+    height: auto;
+    width:auto; 
+}
+
+.about-me{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width: auto;
+}
+
+.about-me h1{
+    margin: 0;
+}
+.about-me strong{
+    color:#01a9cb;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-me p{
+    font-size: 12px;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+.features{
+width: auto;
+height: auto;
+
+padding-bottom: 30px;
+}
+
+.features h1{
+    color:#01a9cb;
+    padding: 30px 0;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
 }
 
 .all-features{
 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    padding-bottom:40px;
+    border-bottom: 2px solid black;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+}
+
+.pro{
+    height:650px;
+    width:250px;
+    gap:10px;
+    padding: 1rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6f1f3;
+}
+
+.pro:hover {
+    box-shadow: 12px 12px 12px rgba(9, 9, 9, 0.2),-12px -12px 12px rgba(9, 9, 9, 0.2); 
+  }
+
+.pic1 img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pic1{
+    justify-items: center;
+    align-items: center;
+
+}
+.caption1{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+.pic2 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caption2{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+.pic3 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caption3{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+
+
+.student-membership{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 1rem;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+    border-bottom: 2px solid black;
+    padding: 4rem 2rem;
+    padding-top: 0;
+}
+.student-membership strong{
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.student-membership h1{
+    margin: 0;
+}
+
+.student-membership p{
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+}
+.stu-mem-pic{
+    padding: 1rem 1rem;
+    width: 200px;
+}
+
+.stu-mem-pic img{
+    height: 200px;
+    width: 200px;
+}
+.student-membership button{
+    all:unset;
+    font-size: 12px;
+}
+
+
+
+
+.testimonials{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem 4rem;
+padding-top: 0;
+font-size: 20px;
+height: 300px;
+text-align: center;
+}
+
+.testimonials strong{
+    font-size: 15px;
+    text-align: center;
+}
+
+.testimonials p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.testimonials button{
+    all: unset;
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+input{
+    width:600px;
+}
+.logincontainer{
+    height: 900px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 0;
+    color: #01a9cb;
+    padding: 20px;
+    background: white;
+
+}
+
+.logincontainer strong{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #01a9cb;
+}
+
+.logincontainer input
+{
+font-size: 25px;
+color: black;
+height:60px;
+width:auto;
+padding: 2px 10px;
+}
+
+.logincontainer button{
+all: unset;
+background-color: #01a9cb;
+height: 60px;
+width: auto;
+padding: 2px 10px;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+.logincontainer button:hover{
+    background-color: #08313a;
+}
+
+.login:hover
+{
+    display: block;
+}
+
+
+.signupcontainer{
+    height: 900px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 0;
+    color: #01a9cb;
+    padding: 20px;
+    background: white;
+}
+
+.signupcontainer strong{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #01a9cb;
+}
+
+.signupcontainer input
+{
+font-size: 25px;
+color: black;
+height:60px;
+width:auto;
+padding: 2px 10px;
+}
+
+.signupcontainer button{
+all: unset;
+background-color: #01a9cb;
+color: white;
+height: 60px;
+width: auto;
+padding: 2px 10px;
+font-size: 25px;
+text-align: center;
+}
+.signupcontainer button:hover{
+    background-color: #08313a;
+}
+
+.sign-up:hover{
+    display: block;
+}
+
+
+
+
+
+.amenitiescontainer{
+    padding: 10px 20px;
+    height: 1800px;
+    width: 768px;
+    background-color: white;
+    color: rgb(56, 44, 44);
+
+}
+.studios{
+    text-align: left;
+    font-size: 25px;
+    color: #01a9cb;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-bottom: 2px solid black;
+}
+
+.studiocontent{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 12px;
+    gap:10px;
+    padding: 5px 5px;
+}
+.studiocontents{
+    display: flex;
+    gap:10px;
+    padding: 5px 5px;
+    justify-content: center;
     align-items: center;
 }
 
+.studiocontent1{
+    gap:10px;
+    padding: 5px 10px;
+}
+.studiocontent2{
+    gap:10px;
+    padding: 5px 10px;
+}
+.studioimages{
+    height: 400px;
+    width: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.studioimages1 img{
+    height: 150px;
+    width: auto;
 
 }
+.studioimages2 img{
+    height: 150px;
+    width: auto;
+
+}
+
+
+
+
+.womensonly{
+    text-align: left;
+    font-size: 25px;
+    color: #01a9cb;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-bottom: 2px solid black;
+}
+
+.womensonlycontent{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 12px;
+    gap:10px;
+    padding: 5px 5px;
+}
+.womensonlycontents{
+    display: flex;
+    gap:10px;
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.womensonlycontent1{
+    gap:10px;
+    padding: 5px 10px;
+}
+.womensonlycontent2{
+    gap:10px;
+    padding: 5px 10px;
+}
+.womensonlyimages{
+    height: 400px;
+    width: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.womensonlyimages1 img{
+    height: 150px;
+    width: auto;
+
+}
+.womensonlyimages2 img{
+    height: 150px;
+    width: auto;
+
+}
+
+
+.amenetiesconclusion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-bottom: 2px solid black;
+}
+
+.amenetiesconclusion strong{
+    text-align: left;
+    font-size: 25px;
+    color: #01a9cb;
+    padding: 3px 20px;
+
+}
+.amenetiesconclusion p{
+text-align: center;
+font-size: 12px;
+color: black;
+
+}
+
+
+.contact{
+    height: 400px;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contactheading{
+    text-align: center;
+    font-size: 25px;
+    color: #01a9cb;
+    padding: 5px 20px;
+}
+.contactcontent{
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding: 3px 20px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width:1382px){
+
+    body{
+        font-family: "Kanit", serif;
+        height: auto;
+        width:1382px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        background-color: aliceblue;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 1382px;
+        position: sticky;
+        top:0;
+        text-decoration: none;
+        font-family: 'Courier New', monospace;
+        }
+
+    header a{
+        text-decoration: none;
+        color:Black;
+    }
+    
+    .logo{
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        width:8%;
+    }
+    
+    .navigation ul{
+        list-style: none;
+        text-decoration: none;
+        display: inline-flex;
+        gap:10px;
+        font-size: 10px;
+        padding:5px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .two, .four{
+     
+      position: relative;
+        display: inline-block;
+    
+    }
+    
+    .dropdown2, .dropdown4{
+    
+        color: black;
+        padding: 5px;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .dropdown-content2, .dropdown-content4{
+        background-color: #f6f2f5;
+        color: black;
+        position: absolute;
+        display: none;
+        height: auto;
+        text-align: center;
+        width: 60px;
+    }
+    
+    .dropdown-content2 a,.dropdown-content4 a{
+      color: black;
+      padding: 6px 8px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown2:hover .dropdown-content2, .dropdown4:hover .dropdown-content4{
+        display: block;
+    }
+    
+    .membership ul{
+        display: inline-flex;
+        list-style: none;
+        text-decoration: none;
+        gap:5px;
+        font-size: 10px;
+        padding:0;
+        width: 100%;
+    }
+    
+
+
+.intro{
+    background-color: white;
+    height:450px;
+    width:1382px;
+    display: flex;
+    flex-direction: column;
+}
+.picture{
+    height: 300px;
+    display:flex ;
+    justify-content: center;
+    padding:0;
+}
+.picture img{
+    object-fit: cover;
+    border-radius: 5%;
+    height:250px;
+    width: 200px;
+    border: 3px solid white;
+    margin: 1rem;
+}
+.profile{
+color: black;
+text-align: center;
+padding: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid black;
+
+}
+.profile h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.profile strong{
+    font-size: 25px;
+}
+.profile p{
+    font-size: 12px;
+}
+
+
+.details{
+    padding: 20px;
+    background-color: white;
+    height: auto;
+    width:auto; 
+}
+
+.about-me{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width: auto;
+}
+
+.about-me h1{
+    margin: 0;
+}
+.about-me strong{
+    color:#01a9cb;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-me p{
+    font-size: 12px;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+.features{
+width: auto;
+height: auto;
+
+padding-bottom: 30px;
+}
+
+.features h1{
+    color:#01a9cb;
+    padding: 30px 0;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.all-features{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    padding-bottom:40px;
+    border-bottom: 2px solid black;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+}
+
+.pro{
+    height:650px;
+    width:250px;
+    gap:10px;
+    padding: 1rem 1rem;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6f1f3;
+}
+
+.pro:hover {
+    box-shadow: 12px 12px 12px rgba(9, 9, 9, 0.2),-12px -12px 12px rgba(9, 9, 9, 0.2); 
+  }
+
+.pic1 img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pic1{
+    justify-items: center;
+    align-items: center;
+
+}
+.caption1{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+.pic2 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caption2{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+.pic3 img{
+    width: 250px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.caption3{
+    text-align: left;
+    color: black;
+    padding: 10px 10px;
+}
+
+
+
+.student-membership{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+    border-bottom: 2px solid black;
+    padding: 4rem 2rem;
+    padding-top: 0;
+}
+.student-membership strong{
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.student-membership h1{
+    margin: 0;
+}
+
+.student-membership p{
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+}
+.stu-mem-pic{
+    padding: 1rem 1rem;
+    width: 200px;
+}
+
+.stu-mem-pic img{
+    height: 200px;
+    width: 200px;
+}
+.student-membership button{
+    all:unset;
+    font-size: 12px;
+}
+
+
+
+
+.testimonials{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem 4rem;
+padding-top: 0;
+font-size: 20px;
+height: 300px;
+text-align: center;
+}
+
+.testimonials strong{
+    font-size: 15px;
+    text-align: center;
+}
+
+.testimonials p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.testimonials button{
+    all: unset;
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+input{
+    width:680px;
+}
+.logincontainer{
+    height: 900px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 0;
+    color: #01a9cb;
+    padding: 20px;
+    background: white;
+
+}
+
+.logincontainer strong{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #01a9cb;
+}
+
+.logincontainer input
+{
+font-size: 25px;
+color: black;
+height:60px;
+width:680px;
+padding: 2px 10px;
+}
+
+.logincontainer button{
+all: unset;
+background-color: #01a9cb;
+height: 60px;
+width:680px;
+padding: 2px 10px;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+.logincontainer button:hover{
+    background-color: #08313a;
+}
+
+.login:hover
+{
+    display: block;
+}
+
+
+.signupcontainer{
+    height: 900px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin: 0;
+    color: #01a9cb;
+    padding: 20px;
+    background: white;
+}
+
+.signupcontainer strong{
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #01a9cb;
+}
+
+.signupcontainer input
+{
+font-size: 25px;
+color: black;
+height:60px;
+width:680px;
+padding: 2px 10px;
+}
+
+.signupcontainer button{
+all: unset;
+background-color: #01a9cb;
+color: white;
+height: 60px;
+width:680px;
+padding: 2px 10px;
+font-size: 25px;
+text-align: center;
+}
+.signupcontainer button:hover{
+    background-color: #08313a;
+}
+
+.sign-up:hover{
+    display: block;
+}
+
+
+
+
+
+.amenitiescontainer{
+    padding: 10px 20px;
+    height: 1800px;
+    width: 1382px;
+    background-color: white;
+    color: rgb(56, 44, 44);
+
+}
+.studios{
+    text-align: left;
+    font-size: 25px;
+    color: #01a9cb;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-bottom: 2px solid black;
+}
+
+.studiocontent{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 12px;
+    gap:10px;
+    padding: 5px 5px;
+}
+.studiocontents{
+    display: flex;
+    gap:10px;
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.studiocontent1{
+    gap:10px;
+    padding: 5px 10px;
+}
+.studiocontent2{
+    gap:10px;
+    padding: 5px 10px;
+}
+.studioimages{
+    height: 400px;
+    width: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.studioimages1 img{
+    height: 150px;
+    width: auto;
+
+}
+.studioimages2 img{
+    height: 150px;
+    width: auto;
+
+}
+
+
+
+
+.womensonly{
+    text-align: left;
+    font-size: 25px;
+    color: #01a9cb;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    border-bottom: 2px solid black;
+}
+
+.womensonlycontent{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 12px;
+    gap:10px;
+    padding: 5px 5px;
+}
+.womensonlycontents{
+    display: flex;
+    gap:10px;
+    padding: 5px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.womensonlycontent1{
+    gap:10px;
+    padding: 5px 10px;
+}
+.womensonlycontent2{
+    gap:10px;
+    padding: 5px 10px;
+}
+.womensonlyimages{
+    height: 400px;
+    width: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.womensonlyimages1 img{
+    height: 150px;
+    width: auto;
+
+}
+.womensonlyimages2 img{
+    height: 150px;
+    width: auto;
+
+}
+
+
+.amenetiesconclusion{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-bottom: 2px solid black;
+}
+
+.amenetiesconclusion strong{
+    text-align: left;
+    font-size: 25px;
+    color: #01a9cb;
+    padding: 3px 20px;
+
+}
+.amenetiesconclusion p{
+text-align: center;
+font-size: 12px;
+color: black;
+
+}
+
+
+.contact{
+    height: 400px;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.contactheading{
+    text-align: center;
+    font-size: 25px;
+    color: #01a9cb;
+    padding: 5px 20px;
+}
+.contactcontent{
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding: 3px 20px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
